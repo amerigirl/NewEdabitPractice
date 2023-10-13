@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-easy',
@@ -7,5 +8,12 @@ import {MatCardModule} from '@angular/material/card';
   styleUrls: ['./easy.component.css']
 })
 export class EasyComponent {
+
+  isCardVisible = false;
+
+  toggleCardVisibility() {
+    this.isCardVisible = !this.isCardVisible;
+  }
+
 
 }

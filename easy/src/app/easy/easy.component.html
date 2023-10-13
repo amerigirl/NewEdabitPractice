@@ -1,4 +1,24 @@
+<br>
 <mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar></div>
+    <mat-card-title class="title">Add up the Numbers from a Single Number
+    </mat-card-title>
+
+  </mat-card-header>
+  <img mat-card-image  class="image"  src="assets\numbers.jpg" alt="Photo of numbers">
+  <mat-card-content>
+    <p>
+      <br>
+      Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="toggleCardVisibility()">Answer</button>
+  </mat-card-actions>
+</mat-card>
+<br>
+<mat-card class="example-card" *ngIf="isCardVisible">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>Shiba Inu</mat-card-title>
@@ -17,3 +37,5 @@
     <button mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>
+
+
