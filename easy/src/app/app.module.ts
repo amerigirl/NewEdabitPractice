@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EasyComponent } from './easy/easy.component';
 import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { MatCardModule } from '@angular/material/card';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MatCardModule
+    AppRoutingModule, MatCardModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
